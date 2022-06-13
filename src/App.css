@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 .main{
+  position: relative;
   background-image: url("./assets/colder.jpg");
   min-height: 100vh;
   background-size: cover;
@@ -16,7 +17,7 @@
 }
 .input{
   margin-top: 20px;
-  width: 400px;
+  width: 50%;
   padding: 12px;
   padding-left: 20px;
   border: 1px solid #999;
@@ -30,7 +31,7 @@
 .main-inform{
   display: flex;
   justify-content: space-between;
-  margin:  20%  20px;
+  margin:  50%  20px;
   color: rgb(249, 247, 247);
 }
 .city-inform p{
@@ -47,10 +48,12 @@
   transform: rotate(-90deg);
 }
 .inform{
+  position: absolute;
+  bottom: 10px;
   border-radius: 5px;
   display: flex;
   justify-content:space-between;
-  margin: 50px;
+  margin: 50px ;
   width: 85%;
   border: 1px solid #777;
   padding: 10px;
@@ -65,4 +68,11 @@
 }
 .inform1 {
     font-size: 20px;
+}
+.text{
+  text-align: center;
+  padding-top: 100px;
+  color: #fff;
+  margin: auto;
+  width: 70%;
 }

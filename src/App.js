@@ -23,27 +23,9 @@ export default function App() {
         });
     }
   }
-  
-  const dateBuilder = (d) => {
-    let months = ["January", "February", "March", "April", "May", "June", "July", "August",
-      "September", "October", "November", "December"];
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-    let day = days[d.getDay()];
-    let date = d.getDate();
-    let month = months[d.getMonth()];
-    let year = d.getFullYear()
-    let hour = d.getHours();
-    let minutes = d.getMinutes()
-    
-    return `${day} ${date} ${month} ${year} ${hour}:${minutes}`
-  }
-
 
   return (
-
     <div className='main'>
-
      <div className="search">
        <input 
        type="text"
@@ -54,6 +36,7 @@ export default function App() {
        onKeyPress={search}
        />
      </div>
+
      {(typeof weather.main != "undefined") ? (
      <div>
      <div className="main-inform">
@@ -83,7 +66,9 @@ export default function App() {
         </div>
      </div>
     </div>
-     ) : ("")}
+     ) : 
+     <h1 className="text">Please Enter a country or city name</h1>
+     }
     </div>
     
   )
