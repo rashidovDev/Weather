@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import City from './components/City'
-import PickCity from './components/PickCity'
 
 function App() {
   const [data, setData] = useState({})
